@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watic - Gerar QR Code</title>
+    <title>WATIC - Gerar QR Code</title>
     <style>
         * {
             margin: 0;
@@ -29,7 +29,7 @@
             left: 0;
             width: 100%;
             height: 222px;
-            background-color: #00a884;
+            background-color: #292929;
             z-index: 1;
         }
 
@@ -128,7 +128,7 @@
 
         .success-message {
             color: #00a884;
-            font-size: 18px;
+            font-size: 25px;
             font-weight: 500;
             padding: 20px;
             text-align: center;
@@ -201,6 +201,8 @@
                     // Hide QR code and countdown
                     document.getElementById('qrcode-display').style.display = 'none';
                     document.getElementById('countdown').style.display = 'none';
+                    // Hide form elements
+                    document.getElementById('qrcodeForm').style.display = 'none';
                     // Show success message
                     document.getElementById('success-message').style.display = 'block';
                     // Clear intervals
